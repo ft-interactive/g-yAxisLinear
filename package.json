@@ -9,7 +9,7 @@
   ],
   "license": "BSD-3-Clause",
   "main": "build/g-yaxislinear.js",
-  "jsnext:main": "index",
+  "module": "index",
   "homepage": "https://github.com/ft-interactive/g-yaxislinear",
   "repository": {
     "type": "git",
