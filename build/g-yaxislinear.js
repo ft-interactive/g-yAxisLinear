@@ -8,7 +8,7 @@
     return 42;
   };
 
-  exports.foo = foo;
+  exports.testyaxis = foo;
 
   Object.defineProperty(exports, '__esModule', { value: true });
 

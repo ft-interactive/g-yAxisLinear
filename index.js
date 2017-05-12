@@ -1,1 +1,1 @@
-export {default as testyaxis} from "./src/foo";
+export {default as foo} from "./src/foo";
