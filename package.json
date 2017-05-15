@@ -4,6 +4,8 @@
   "version": "0.0.1",
   "description": "{DESCRIPTION}",
   "keywords": [
+    "FT",
+    "g-chartframe",
     "d3",
     "d3-module"
   ],
