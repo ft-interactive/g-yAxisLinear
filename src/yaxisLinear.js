@@ -1,5 +1,6 @@
 import { scaleLinear } from 'd3-scale';
 import { axis } from 'd3-axis';
+
 export default function() {
 	
 	let yScale = scaleLinear();
