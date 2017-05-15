@@ -1,4 +1,4 @@
-# d3-foo
+# yaxisLinear
 
 Pre styled and positioned linear y axis for us with the FT's g-chartframe as part of the Visual Vocabulary.
 
