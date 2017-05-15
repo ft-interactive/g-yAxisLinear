@@ -6,7 +6,7 @@
 
     function yaxisLinear() {
 
-        let yScale = d3.scaleLinear();
+        let yScale = d3.scalelinear();
         let yAxisAlign = "right"
         let yLabelOffset = 0;
         let tickSize = 5;
