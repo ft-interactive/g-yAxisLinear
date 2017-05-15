@@ -1,8 +1,8 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-  typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (factory((global.d3 = global.d3 || {})));
-}(this, function (exports) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('d3-scale')) :
+  typeof define === 'function' && define.amd ? define(['exports', 'd3-scale'], factory) :
+  (factory((global.d3 = global.d3 || {}),global.d3Scale));
+}(this, function (exports,d3Scale) { 'use strict';
 
   // https://d3js.org Version 4.8.0. Copyright 2017 Mike Bostock.
   (function (global, factory) {
