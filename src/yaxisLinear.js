@@ -1,4 +1,4 @@
-import { scaleLinear as d3.scaleLinear } from 'd3-scale';
+import { d3 } from 'd3';
 export default function() {
 
     let yScale = d3.scaleLinear();
