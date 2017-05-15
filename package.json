@@ -24,7 +24,8 @@
     "postpublish": "zip -j build/g-yaxislinear.zip -- LICENSE README.md build/g-yaxislinear.js build/g-yaxislinear.min.js"
   },
   "dependencies": {
-    "d3": "4",
+    "d3-scale": "1",
+    "d3-axis": "1"
   },
   "devDependencies": {
     "rollup": "0.27",

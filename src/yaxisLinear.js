@@ -1,7 +1,7 @@
-import { d3 } from 'd3';
+import { scaleLinear } from 'd3-scale';
 export default function() {
-
-    let yScale = d3.scalelinear();
+	
+	let yScale = scaleLinear();
     let yAxisAlign = "right"
     let yLabelOffset = 0;
     let tickSize = 5;
