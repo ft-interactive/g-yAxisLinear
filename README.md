@@ -1,6 +1,6 @@
 # d3-foo
 
-YOUR DESCRIPTION HERE. Replace all instances of `foo` in this file with the name of your new plugin.
+Pre styled and positioned linear y axis for us with the FT's g-chartframe as part of the Visual Vocabulary.
 
 ## Installing
 
