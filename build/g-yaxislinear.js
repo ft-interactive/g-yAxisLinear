@@ -1,12 +1,12 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('d3-scale'), require('d3-axis')) :
-    typeof define === 'function' && define.amd ? define(['exports', 'd3-scale', 'd3-axis'], factory) :
-    (factory((global.d3 = global.d3 || {}),global.d3Scale,global.d3Axis));
-}(this, function (exports,d3Scale,d3Axis) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('d3')) :
+    typeof define === 'function' && define.amd ? define(['exports', 'd3'], factory) :
+    (factory((global.gYAxisLinear = global.gYAxisLinear || {}),global.d3));
+}(this, function (exports,d3) { 'use strict';
 
     function yaxisLinear() {
-    	
-    	let yScale = d3Scale.scaleLinear();
+
+    	  let yScale = d3.scaleLinear();
         let yAxisAlign = "right"
         let yLabelOffset = 0;
         let tickSize = 5;
@@ -18,7 +18,7 @@
             const yAxis =getAxis(yAxisAlign)
                 .ticks(numTicksy)
                 .scale(yScale)
-            
+
             const yLabel = parent.append("g")
                 .attr("class","axis yAxis")
                 .call(yAxis)

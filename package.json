@@ -1,6 +1,6 @@
 {
   "name": "g-yaxislinear",
-  "author":"Bob haslett",
+  "author": "Bob haslett",
   "version": "0.0.1",
   "description": "{DESCRIPTION}",
   "keywords": [
@@ -18,14 +18,13 @@
     "url": "https://github.com/ft-interactive/g-yaxislinear.git"
   },
   "scripts": {
-    "pretest": "rm -rf build && mkdir build && rollup -f umd -n d3 -o build/g-yaxislinear.js -- index.js",
+    "pretest": "rm -rf build && mkdir build && rollup --globals d3:d3 -f umd -n gYAxisLinear -o build/g-yaxislinear.js -- index.js",
     "test": "tape 'test/**/*-test.js'",
     "prepublish": "npm run test && uglifyjs build/g-yaxislinear.js -c -m -o build/g-yaxislinear.min.js",
     "postpublish": "zip -j build/g-yaxislinear.zip -- LICENSE README.md build/g-yaxislinear.js build/g-yaxislinear.min.js"
   },
   "dependencies": {
-    "d3-scale": "1",
-    "d3-axis": "1"
+    "d3": "^4.9.1"
   },
   "devDependencies": {
     "rollup": "0.27",

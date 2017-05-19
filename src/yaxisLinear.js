@@ -1,9 +1,8 @@
-import { scaleLinear } from 'd3-scale';
-import { axis } from 'd3-axis';
+import * as d3 from 'd3';
 
 export default function() {
-	
-	let yScale = scaleLinear();
+
+	  let yScale = d3.scaleLinear();
     let yAxisAlign = "right"
     let yLabelOffset = 0;
     let tickSize = 5;
@@ -15,7 +14,7 @@ export default function() {
         const yAxis =getAxis(yAxisAlign)
             .ticks(numTicksy)
             .scale(yScale)
-        
+
         const yLabel = parent.append("g")
             .attr("class","axis yAxis")
             .call(yAxis)
