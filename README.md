@@ -2,9 +2,11 @@
 
 Pre styled and positioned linear y axis for us with the FT's g-chartframe as part of the Visual Vocabulary.
 
-## Installing
+### Prerequisites
+Updates on css styles and d3 library to go in here
 
-If you use NPM, `npm install d3-foo`. Otherwise, download the [latest release](https://github.com/d3/d3-foo/releases/latest).
+## Installing
+### Manually install
 
 ## API Reference
 
