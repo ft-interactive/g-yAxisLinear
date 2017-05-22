@@ -1,12 +1,17 @@
 # yaxisLinear
 
-Pre styled and positioned linear y axis for us with the FT's g-chartframe as part of the Visual Vocabulary.
+Pre styled and positioned linear y axis for us with the FT's g-chartframe as part of the Visual Vocabulary. Will also work with other builds where the axis is called into a pre defined 'g' element.
 
 ### Prerequisites
-Updates on css styles and d3 library to go in here
+The [d3 library](https://d3js.org/), already installed
 
 ## Installing
 ### Manually install
+
+Add the following line to the header of you index file.
+
+### NPM install
+Not yet deployed untill fully tested
 
 ## API Reference
 
