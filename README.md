@@ -4,6 +4,7 @@ Pre styled and positioned linear y axis for us with the FT's g-chartframe as par
 
 ### Prerequisites
 The FT axis styles---add the folowwing link in your index file header
+
 The [d3 library](https://d3js.org/) is already installed in the build
 
 ## Installing
