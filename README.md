@@ -24,9 +24,9 @@ This appends a linear y axix to the current frame, returning the width of the ti
 
 ![alt tag](https://github.com/ft-interactive/g-yaxislinear/blob/master/images/initialPlot.png)
 
-This value is important a it should be used to amend the right or left hand margins of the current frame (depending on alignment) thus:
+This value should be used to amend the right or left hand margins of the current frame (depending on alignment) thus:
 
-so that the tick text is positioned on the outside of the current frame plot area. This way the width of the current fram can still be used to correctly define the .range() values of an x axis and subsequent plots would be correctly positioned on the axis.
+so that the tick text is positioned on the outside of the current frame plot area. This way the width of the current frame can still be used to correctly define the .range() values of an x axis.
 
 ![alt tag](https://github.com/ft-interactive/g-yaxislinear/blob/master/images/amendedPlot.png)
 
