@@ -24,17 +24,18 @@ Add the following line to the header of you index file.
 Not yet deployed untill fully testedi
 
 ## Configuring and calling
+Adding the following code will append a default y-axis to the .plot object
 
 ```
 const myAxis = gAxis.yaxisLinear;
 more code in here;
 ```
 ### Positioning
-This appends an axis to the current frame, returning the width of the ticks text via the .yLabelOffset setter. The ticks are positioned on the right by default.
+This appends an axis to the .plot object, returning the width of the ticks text via the .yLabelOffset setter. The ticks are positioned on the right by default.
 
 ![alt tag](https://github.com/ft-interactive/g-yaxislinear/blob/master/images/initialPlot.png)
 
-.yLabelOffset should be used to amend the right or left hand margins of the current frame (depending on alignment)
+.yLabelOffset should be used to amend the right or left hand margins of the .plot (depending on tick alignment)
 
 Tick text is then positioned on the outside of the current frame plot area. This way the width of the current frame can still be used to correctly define the .range() values of an x axis.
 
