@@ -21,7 +21,7 @@ more code in here;
 ```
 ### Positioning
 The above script appends a linear y axix to the current frame, returning the value yLabelOffset. The ticks are positioned on the right by default.
-![alt tag](https://github.com/ft-interactive/g-yaxislinear/images/initialPlot.png)
+![alt tag](https://github.com/ft-interactive/g-yaxislinear/tree/master/images/initialPlot.png)
 
 
 
