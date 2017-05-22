@@ -3,12 +3,17 @@
 Pre styled and positioned linear y axis for us with the FT's g-chartframe as part of the Visual Vocabulary. Will also work with other builds where the axis is called into a 'g' element appended to a pre-defined svg.
 
 ### Prerequisites
+The FT axis styles---add the folowwing link in your index file header
 The [d3 library](https://d3js.org/) is already installed in the build
 
 ## Installing
 ### Manually install
 
 Add the following line to the header of you index file.
+```
+
+```
+
 
 ### NPM install
 Not yet deployed untill fully tested
