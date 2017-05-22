@@ -1,6 +1,6 @@
 # yaxisLinear
 
-Pre styled and positioned linear y axis for us with the FT's g-chartframe as part of the Visual Vocabulary. Will also work with other builds where the axis is called into a pre defined 'g' element.
+Pre styled and positioned linear y axis for us with the FT's g-chartframe as part of the Visual Vocabulary. Will also work with other builds where the axis is called into a 'g' element appended to a pre-defined svg element.
 
 ### Prerequisites
 The [d3 library](https://d3js.org/), already installed
@@ -14,6 +14,11 @@ Add the following line to the header of you index file.
 Not yet deployed untill fully tested
 
 ## Configuring and calling
+
+```
+const myAxis = gAxis.yaxisLinear;
+more code in here;
+```
 
 ## API Reference
 
