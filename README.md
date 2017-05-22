@@ -1,6 +1,6 @@
 # yaxisLinear
 
-Pre styled and positioned linear y axis for use with the FT's g-chartframe as part of the Visual Vocabulary. As the name suggests it appends a linear y-axis to the .plot obejct in the chartframe.
+Pre styled and positioned linear y-axis for use with the FT's g-chartframe as part of the Visual Vocabulary. As the name suggests it appends a linear y-axis to the .plot obejct in the g-chartframe hopefully eliminating the need to keep creating another standard y-axis.
 
 Will also work with other builds where the axis is called into a 'g' element appended to a pre-defined svg.
 
@@ -21,7 +21,7 @@ Add the following line to the header of you index file.
 
 
 ### NPM install
-Not yet deployed untill fully tested
+Not yet deployed untill fully testedi
 
 ## Configuring and calling
 
