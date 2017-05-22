@@ -1,9 +1,9 @@
 # yaxisLinear
 
-Pre styled and positioned linear y axis for us with the FT's g-chartframe as part of the Visual Vocabulary. Will also work with other builds where the axis is called into a 'g' element appended to a pre-defined svg element.
+Pre styled and positioned linear y axis for us with the FT's g-chartframe as part of the Visual Vocabulary. Will also work with other builds where the axis is called into a 'g' element appended to a pre-defined svg.
 
 ### Prerequisites
-The [d3 library](https://d3js.org/), already installed
+The [d3 library](https://d3js.org/) is already installed in the build
 
 ## Installing
 ### Manually install
@@ -19,6 +19,11 @@ Not yet deployed untill fully tested
 const myAxis = gAxis.yaxisLinear;
 more code in here;
 ```
+### Positioning
+The above script appends a linear y axix to the current frame, returning the value yLabelOffset. The ticks are positioned on the right by default.
+![alt tag](https://github.com/ft-interactive/g-yaxislinear/images/initialPlot.png)
+
+
 
 ## API Reference
 
