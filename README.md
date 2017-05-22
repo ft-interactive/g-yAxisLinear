@@ -13,7 +13,7 @@ Add the following line to the header of you index file.
 ### NPM install
 Not yet deployed untill fully tested
 
-## Calling yaxLinear
+## Configuring and calling
 
 ## API Reference
 
