@@ -13,6 +13,8 @@ Add the following line to the header of you index file.
 ### NPM install
 Not yet deployed untill fully tested
 
+## Calling yaxLinear
+
 ## API Reference
 
 YOUR API DOCUMENTATION HERE. Use bold for symbols (such as constructor and method names) and italics for instances. See the other D3 modules for examples.
