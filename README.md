@@ -75,7 +75,10 @@ The current frame can then still be used to correctly define the <b>.range()</b>
 
 #myAxis<b>.range([Array])<</b> defines the axis  range in the same way as you would when creating a normal d3.scaleLinear(). If no <b>.range()</b> is defined the default is [120,0])
 
-#myAxis<b>.yLabelOffset([Number])</b> Used to access the width of the text on the axis tick. Will vary depending on tick e.g. a tick label of 1,000,000 is wider than a a tick value od 10 and will return a higher number.
+#myAxis<b>.yLabelOffset([Number])</b> used to return the width of the text on the axis tick. Will vary depending on tick e.g. a label of 1,000,000 is wider than a value of 10 and will return a higher number.
+
+## Examples
+### Left hand axis
 
 
 
