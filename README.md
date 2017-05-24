@@ -26,7 +26,7 @@ Add the following line to the header of you index.html file.
 Not yet deployed
 
 ## Getting started
-Add the following code to your index.js to append a default y-axis to the .plot object (grey but is not normally visible)
+Add the following code to your index.js to append a default y-axis to the .plot object (grey here but is not normally visible)
 
 ```
 let myAxis = gAxis.yaxisLinear;
