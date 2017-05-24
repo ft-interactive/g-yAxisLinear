@@ -17,9 +17,7 @@ The [d3 library](https://d3js.org/) is already installed in the build
 Add the following line to the header of you index file.
 
 ``` html
-<pre>
 <script src="https://rawgit.com/ft-interactive/g-yaxislinear/master/build/g-yaxislinear.js"> </script\>
-</pre>
 ```
 
 
