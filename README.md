@@ -55,6 +55,7 @@ The tick text is then positioned on the outside of the current frame area. This 
 ## API Reference
 
 #myAxis<b>.align()</b>
+
 String expected. Set to "right" by default
 
 #myAxis<b>.domain</b>
