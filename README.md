@@ -28,7 +28,8 @@ Add the following code to your index.js to append a default y-axis to the .plot 
 
 ```
 const myAxis = gAxis.yaxisLinear;
-more code in here;
+currentFrame.plot()
+	.call(myYAxis);
 ```
 ### Positioning
 This appends an axis to the .plot object, returning the width of the ticks text via the .yLabelOffset setter. The ticks are positioned on the right by default.
