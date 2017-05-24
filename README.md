@@ -33,7 +33,10 @@ let myAxis = gAxis.yaxisLinear;
 currentFrame.plot()
 	.call(myYAxis);
 ```
+
 ![alt tag](https://github.com/ft-interactive/g-yaxislinear/blob/master/images/initialPlot.png)
+
+Setting the <b>.ticksize</b> and the range to the dimensions of the current frame will make the axis fit the frae exactly
 
 ```
 let myAxis = gAxis.yaxisLinear;
