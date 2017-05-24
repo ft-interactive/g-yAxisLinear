@@ -79,7 +79,7 @@ The current frame can then still be used to correctly define the <b>.range()</b>
 
 ## Examples
 ### Left hand axis
-	.call(currentFrame);
+
 ```
  myYAxis
             .range([currentFrame.dimension().height,0])
