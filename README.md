@@ -79,6 +79,25 @@ The current frame can then still be used to correctly define the <b>.range()</b>
 
 ## Examples
 ### Left hand axis
+	.call(currentFrame);
+```
+ myYAxis
+            .range([currentFrame.dimension().height,0])
+            .domain([0,80])
+            .tickSize(currentFrame.dimension().width)
+            .yAxisAlign("left")
+
+        currentFrame.plot()
+            .call(myYAxis);
+
+        let newMargin = myYAxis.yLabelOffset()+currentFrame.margin().left;
+        currentFrame.margin({left:newMargin});
+        d3.select(currentFrame.plot().node().parentNode)
+            .call(currentFrame);
+	.call(currentFrame);
+```
+
+![alt tag](https://github.com/ft-interactive/g-yaxislinear/blob/master/images/alignLeft.png)
 
 
 
