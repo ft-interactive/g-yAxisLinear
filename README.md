@@ -71,7 +71,7 @@ The current frame can then still be used to correctly define the <b>.range()</b>
 
 #myAxis<b>.align([String])</b> "right" or "left". Determines the alignment of the tick text set as "right" by default
 
-#myAxis<b>.domain</b>
+#myAxis<b>.domain([Array])</b> defines the axis domain in the same way as you would when creating a normal d3.scaleLinear(). If no <b>.domain()</b> is defined the default is [0,10000]
 
 #myAxis<b>.range</b>
 
