@@ -33,6 +33,8 @@ const myAxis = gAxis.yaxisLinear;
 currentFrame.plot()
 	.call(myYAxis);
 ```
+![alt tag](https://github.com/ft-interactive/g-yaxislinear/blob/master/images/initialPlot.png)
+
 ### Positioning
 The rendered axis returns the width of the ticks text via the .yLabelOffset setter. The ticks are positioned on the right by default, but can be changed (see examples).
 
