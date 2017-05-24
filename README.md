@@ -29,11 +29,20 @@ Not yet deployed untill fully testedi
 Add the following code to your index.js to append a default y-axis to the .plot object
 
 ```
-const myAxis = gAxis.yaxisLinear;
+let myAxis = gAxis.yaxisLinear;
 currentFrame.plot()
 	.call(myYAxis);
 ```
 ![alt tag](https://github.com/ft-interactive/g-yaxislinear/blob/master/images/initialPlot.png)
+
+```
+let myAxis = gAxis.yaxisLinear;
+myYAxis
+    .range([currentFrame.dimension().height,0])
+    .tickSize(currentFrame.dimension().width);
+currentFrame.plot()
+	.call(myYAxis);
+```
 
 ### Positioning
 The rendered axis returns the width of the ticks text via the .yLabelOffset setter. The ticks are positioned on the right by default, but can be changed (see examples).
