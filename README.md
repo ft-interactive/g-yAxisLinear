@@ -1,6 +1,6 @@
 # yaxisLinear
 
-Pre styled and positioned linear y-axis for use with the FT's g-chartframe as part of the Visual Vocabulary. As the name suggests it appends a linear y-axis to the .plot obejct in the g-chartframe hopefully eliminating the need to keep creating another standard y-axis.
+Pre styled and positioned linear y-axis for use with the FT's g-chartframe as part of the Visual Vocabulary. As the name suggests it creates a linear y-axis that can be appended to the .plot obejct in the g-chartframe hopefully eliminating the need to keep code another standard y-axis.
 
 Will also work with other builds where the axis is called into a 'g' element appended to a pre-defined svg.
 
@@ -47,10 +47,9 @@ d3.select(currentFrame.plot().node().parentNode)
 	.call(currentFrame);
 ```
 
-The tick text is then positioned on the outside of the current frame plot area. This way the width of the current frame can still be used to correctly define the .range() values of an x axis. If you gave your ticks aligned to the left then the .plot left hand margin should be ammended
+The tick text is then positioned on the outside of the current frame area. This way the width of the .plot object can still be used to correctly define the .range() values of an x axis. If ticks are aligned to the left then the .plot left hand margin should be ammended
 
 ![alt tag](https://github.com/ft-interactive/g-yaxislinear/blob/master/images/amendedPlot.png)
-
 
 
 ## API Reference
