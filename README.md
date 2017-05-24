@@ -50,11 +50,11 @@ currentFrame.plot()
 
 
 ### Positioning
-The rendered axis returns the width of the ticks text via <b>.yLabelOffset()</b> (see examples).
+The rendered axis returns the width of the ticks text via <b>.yLabelOffset()</b>.
 
 ![alt tag](https://github.com/ft-interactive/g-yaxislinear/blob/master/images/yOffsetLabel.png)
 
-.yLabelOffset should be used to amend the right hand margin of the .plot(
+<b>.yLabelOffset</b> is be used to amend the right hand margin of the current frame element so that tick text is positioned outside the current frame,
 
 ```
 let newMargin = myYAxis.yLabelOffset()+currentFrame.margin().right;
@@ -63,9 +63,11 @@ d3.select(currentFrame.plot().node().parentNode)
 	.call(currentFrame);
 ```
 
-The tick text is then positioned on the outside of the current frame area. This way the width of the .plot object can still be used to correctly define the .range() values of an x axis. If ticks are aligned to the left then the .plot left hand margin should be ammended
-
 ![alt tag](https://github.com/ft-interactive/g-yaxislinear/blob/master/images/amendedPlot.png)
+
+The current frame can then still be used to correctly define the <b>.range()</b> values of an x-axis. If ticks are aligned to the left then the left hand margin should be ammended instaed of the right
+
+![alt tag](https://github.com/ft-interactive/g-yaxislinear/blob/master/images/newWidth.png)
 
 
 ## API Reference
