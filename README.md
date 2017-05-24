@@ -15,15 +15,15 @@ The [d3 library](https://d3js.org/) is already installed in the build
 ### Manually install
 
 Add the following line to the header of you index file.
-```
+
 <script\src="https://rawgit.com/ft-interactive/g-yaxislinear/master/build/g-yaxislinear.js"> </script\>
-```
+
 
 
 ### NPM install
 Not yet deployed untill fully testedi
 
-## Configuring and calling
+## Getting started
 Add the following code to your index.js to append a default y-axis to the .plot object
 
 ```
