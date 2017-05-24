@@ -50,11 +50,11 @@ currentFrame.plot()
 
 
 ### Positioning
-The rendered axis returns the width of the ticks text via the .yLabelOffset setter. The ticks are positioned on the right by default, but can be changed (see examples).
+The rendered axis returns the width of the ticks text via <b>.yLabelOffset()</b> (see examples).
 
-![alt tag](https://github.com/ft-interactive/g-yaxislinear/blob/master/images/initialPlot.png)
+![alt tag](https://github.com/ft-interactive/g-yaxislinear/blob/master/images/yOffsetLabel.png)
 
-.yLabelOffset should be used to amend the right hand margin of the .plot (
+.yLabelOffset should be used to amend the right hand margin of the .plot(
 
 ```
 let newMargin = myYAxis.yLabelOffset()+currentFrame.margin().right;
