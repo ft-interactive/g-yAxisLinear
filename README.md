@@ -34,11 +34,19 @@ currentFrame.plot()
 	.call(myYAxis);
 ```
 ### Positioning
-The rendered axis returns the width of the ticks text via the .yLabelOffset setter. The ticks are positioned on the right by default but can be changed (see examples).
+The rendered axis returns the width of the ticks text via the .yLabelOffset setter. The ticks are positioned on the right by default, but can be changed (see examples).
 
 ![alt tag](https://github.com/ft-interactive/g-yaxislinear/blob/master/images/initialPlot.png)
 
 .yLabelOffset should be used to amend the right or left hand margins of the .plot (depending on tick alignment)
+
+```
+let newMargin = myYAxis.yLabelOffset()+currentFrame.margin().right;
+currentFrame.margin({right:newMargin});
+d3.select(currentFrame.plot().node().parentNode)
+	.call(currentFrame);
+
+```
 
 The tick text is then positioned on the outside of the current frame plot area. This way the width of the current frame can still be used to correctly define the .range() values of an x axis.
 
