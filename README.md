@@ -38,7 +38,7 @@ The rendered axis returns the width of the ticks text via the .yLabelOffset sett
 
 ![alt tag](https://github.com/ft-interactive/g-yaxislinear/blob/master/images/initialPlot.png)
 
-.yLabelOffset should be used to amend the right or left hand margins of the .plot (depending on tick alignment)
+.yLabelOffset should be used to amend the right hand margin of the .plot (
 
 ```
 let newMargin = myYAxis.yLabelOffset()+currentFrame.margin().right;
@@ -48,7 +48,7 @@ d3.select(currentFrame.plot().node().parentNode)
 
 ```
 
-The tick text is then positioned on the outside of the current frame plot area. This way the width of the current frame can still be used to correctly define the .range() values of an x axis.
+The tick text is then positioned on the outside of the current frame plot area. This way the width of the current frame can still be used to correctly define the .range() values of an x axis. If you gave your ticks aligned to the left then the .plot left hand margin should be ammended
 
 ![alt tag](https://github.com/ft-interactive/g-yaxislinear/blob/master/images/amendedPlot.png)
 
