@@ -97,7 +97,7 @@ The current frame can then still be used to correctly define the <b>.range()</b>
 	.call(currentFrame);
 ```
 
-![alt tag](https://github.com/ft-interactive/g-yaxislinear/blob/master/images/alignLeft.png)
+![alt tag](https://github.com/ft-interactive/g-yaxislinear/blob/master/images/leftAligh.png)
 
 
 
