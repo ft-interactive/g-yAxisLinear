@@ -45,7 +45,6 @@ let newMargin = myYAxis.yLabelOffset()+currentFrame.margin().right;
 currentFrame.margin({right:newMargin});
 d3.select(currentFrame.plot().node().parentNode)
 	.call(currentFrame);
-
 ```
 
 The tick text is then positioned on the outside of the current frame plot area. This way the width of the current frame can still be used to correctly define the .range() values of an x axis. If you gave your ticks aligned to the left then the .plot left hand margin should be ammended
