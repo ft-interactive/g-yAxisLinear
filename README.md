@@ -1,4 +1,4 @@
-# yaxisLinear
+`# yaxisLinear
 
 Pre styled and positioned linear y-axis for use with the FT's g-chartframe as part of the Visual Vocabulary. As the name suggests it creates a linear y-axis that can be appended to the .plot obejct in the g-chartframe hopefully eliminating the need to keep code another standard y-axis.
 
@@ -54,7 +54,7 @@ The tick text is then positioned on the outside of the current frame area. This 
 
 ## API Reference
 
-#myAxis<b>.align([String])</b> "right" or "left", set as "right" by default
+#myAxis<b>.align([String])</b> "right" or "left". Determines the alignment of the tick text set as "right" by default
 
 #myAxis<b>.domain</b>
 

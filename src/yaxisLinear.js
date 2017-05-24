@@ -2,12 +2,14 @@ import * as d3 from 'd3';
 
 export default function() {
 
-	  let yScale = d3.scaleLinear();
+	let yScale = d3.scaleLinear()
+        .domain([0,10000])
+        .range([120,0])
     let yAxisAlign = "right"
     let yLabelOffset = 0;
-    let tickSize = 5;
+    let tickSize = 300;
     let yAxisHighlight = 0;
-    let numTicksy = 2
+    let numTicksy = 5
 
     function axis(parent) {
 
@@ -48,6 +50,14 @@ export default function() {
         yScale = d;
         return axis;
     }
+    axis.domain = (d)=>{
+        yScale.domain(d);
+        return axis;
+    };
+    axis.range = (d)=>{
+        yScale.range(d);
+        return axis;
+    };
     axis.yAxisAlign = (d)=>{
         yAxisAlign=d;
         return axis;
