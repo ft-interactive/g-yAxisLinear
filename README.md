@@ -73,7 +73,7 @@ The current frame can then still be used to correctly define the <b>.range()</b>
 
 #myAxis<b>.domain([Array])</b> defines the axis domain in the same way as you would when creating a normal d3.scaleLinear(). If no <b>.domain()</b> is defined the default is [0,10000]
 
-#myAxis<b>.range([Array])<</b> defines the axis  range in the same way as you would when creating a normal d3.scaleLinear(). If no <b>.range()</b> is defined the default is [120,0])
+#myAxis<b>.range([Array])</b> defines the axis  range in the same way as you would when creating a normal d3.scaleLinear(). If no <b>.range()</b> is defined the default is [120,0])
 
 #myAxis<b>.yLabelOffset([Number])</b> used to return the width of the text on the axis tick. Will vary depending on tick e.g. a label of 1,000,000 is wider than a value of 10 and will return a higher number.
 
@@ -100,7 +100,7 @@ d3.select(currentFrame.plot().node().parentNode)
 
 ![alt tag](https://github.com/ft-interactive/g-yaxislinear/blob/master/images/leftAligh.png)
 
-### Controling the number of ticks
+### Number of ticks
 
 ```
 myYAxis
