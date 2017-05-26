@@ -18,7 +18,7 @@
     "url": "https://github.com/ft-interactive/g-yaxislinear.git"
   },
   "scripts": {
-    "pretest": "rm -rf build && mkdir build && rollup --globals d3:d3 -f umd -n gYAxisLinear -o build/g-yaxislinear.js -- index.js",
+    "pretest": "rm -rf build && mkdir build && rollup --globals d3:d3 -f umd -n gAxis -o build/g-yaxislinear.js -- index.js",
     "test": "tape 'test/**/*-test.js'",
     "prepublish": "npm run test && uglifyjs build/g-yaxislinear.js -c -m -o build/g-yaxislinear.min.js",
     "postpublish": "zip -j build/g-yaxislinear.zip -- LICENSE README.md build/g-yaxislinear.js build/g-yaxislinear.min.js"

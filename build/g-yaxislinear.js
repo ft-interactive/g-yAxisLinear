@@ -1,17 +1,19 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('d3')) :
     typeof define === 'function' && define.amd ? define(['exports', 'd3'], factory) :
-    (factory((global.gYAxisLinear = global.gYAxisLinear || {}),global.d3));
+    (factory((global.gAxis = global.gAxis || {}),global.d3));
 }(this, function (exports,d3) { 'use strict';
 
     function yaxisLinear() {
 
-    	  let yScale = d3.scaleLinear();
+    	let yScale = d3.scaleLinear()
+            .domain([0,10000])
+            .range([120,0])
         let yAxisAlign = "right"
         let yLabelOffset = 0;
-        let tickSize = 5;
+        let tickSize = 300;
         let yAxisHighlight = 0;
-        let numTicksy = 2
+        let numTicksy = 5
 
         function axis(parent) {
 
@@ -52,6 +54,14 @@
             yScale = d;
             return axis;
         }
+        axis.domain = (d)=>{
+            yScale.domain(d);
+            return axis;
+        };
+        axis.range = (d)=>{
+            yScale.range(d);
+            return axis;
+        };
         axis.yAxisAlign = (d)=>{
             yAxisAlign=d;
             return axis;
