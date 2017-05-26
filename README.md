@@ -77,7 +77,7 @@ The current frame can then still be used to correctly define the <b>.range()</b>
 
 #myAxis<b>.yLabelOffset([Number])</b> used to return the width of the text on the axis tick. Will vary depending on tick e.g. a label of 1,000,000 is wider than a value of 10 and will return a higher number.
 
-#myAxis<b>.numTicksy([Number])</b> as they name suggest defines how many ticks are on the axis. 0 to 100 with 3 tick would give a zero line, a fifty line and a hundred line.
+#myAxis<b>.numTicks([Number])</b> as they name suggest defines how many ticks are on the axis. 0 to 100 with 3 tick would give a zero line, a fifty line and a hundred line.
 
 ## Examples
 ### Left hand axis
@@ -108,7 +108,7 @@ myYAxis
 	.domain([0,100])
 	.tickSize(currentFrame.dimension().width)
 	.yAxisAlign("right")
-	.numTicksy(3)
+	.numTicks(3)
 
 currentFrame.plot()
 	.call(myYAxis);
