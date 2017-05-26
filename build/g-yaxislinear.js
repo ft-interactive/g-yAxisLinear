@@ -13,12 +13,12 @@
         let yLabelOffset = 0;
         let tickSize = 300;
         let yAxisHighlight = 0;
-        let numTicksy = 5
+        let numTicks = 5
 
         function axis(parent) {
 
             const yAxis =getAxis(yAxisAlign)
-                .ticks(numTicksy)
+                .ticks(numTicks)
                 .scale(yScale)
 
             const yLabel = parent.append("g")
@@ -80,8 +80,8 @@
             yAxisHighlight = d;
             return axis;
         }
-        axis.numTicksy = (d)=>{
-            numTicksy = d;
+        axis.numTicks = (d)=>{
+            numTicks = d;
             return axis;
         }
         axis.yAxisAlign = (d)=>{
