@@ -5,7 +5,7 @@ export default function() {
 	let yScale = d3.scaleLinear()
         .domain([0,10000])
         .range([120,0])
-    let yAxisAlign = "right"
+    let tickAlign = "right"
     let labelWidth = 0;
     let tickSize = 300;
     let yAxisHighlight = 0;
@@ -13,7 +13,7 @@ export default function() {
 
     function axis(parent) {
 
-        const yAxis =getAxis(yAxisAlign)
+        const yAxis =getAxis(tickAlign)
             .ticks(numTicks)
             .scale(yScale)
 
@@ -30,12 +30,12 @@ export default function() {
         yLabel.call(yAxis.tickSize(tickSize-labelWidth))
 
         //position label on right hand axis
-        if(yAxisAlign=="right") {
+        if(tickAlign=="right") {
             yLabel.selectAll("text")
             .attr("dx",labelWidth)
         }
         //translate if a left axis
-        if (yAxisAlign=="left") {
+        if (tickAlign=="left") {
             yLabel.attr("transform","translate("+(tickSize-labelWidth)+","+0+")")
         }
         //identify 0 line if there is one
@@ -58,8 +58,8 @@ export default function() {
         yScale.range(d);
         return axis;
     };
-    axis.yAxisAlign = (d)=>{
-        yAxisAlign=d;
+    axis.tickAlign = (d)=>{
+        tickAlign=d;
         return axis;
     }
     axis.labelWidth = (d)=>{
@@ -80,9 +80,9 @@ export default function() {
         numTicks = d;
         return axis;
     }
-    axis.yAxisAlign = (d)=>{
-        if(!d) return yAxisAlign;
-        yAxisAlign = d;
+    axis.tickAlign = (d)=>{
+        if(!d) return tickAlign;
+        tickAlign = d;
         return axis;
     }
     return axis
