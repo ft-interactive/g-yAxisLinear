@@ -87,7 +87,7 @@ The current frame can then still be used to correctly define the <b>.range()</b>
 	.range([currentFrame.dimension().height,0])
 	.domain([0,80])
 	.tickSize(currentFrame.dimension().width)
-	.yAxisAlign("left")
+	.tickAlign("left")
 
 currentFrame.plot()
 	.call(myYAxis);
@@ -107,7 +107,7 @@ myYAxis
 	.range([currentFrame.dimension().height,0])
 	.domain([0,100])
 	.tickSize(currentFrame.dimension().width)
-	.yAxisAlign("right")
+	.tickAlign("right")
 	.numTicks(3)
 
 currentFrame.plot()
