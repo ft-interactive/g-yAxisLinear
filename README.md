@@ -50,14 +50,14 @@ currentFrame.plot()
 
 
 ### Positioning
-The rendered axis returns the width of the ticks text via <b>.yLabelOffset()</b>.
+The rendered axis returns the width of the ticks text via <b>.labelWidth()</b>.
 
 ![alt tag](https://github.com/ft-interactive/g-yaxislinear/blob/master/images/yOffsetLabel.png)
 
-<b>.yLabelOffset</b> is used to amend the right hand margin of the current frame element so that tick text is positioned outside the current frame,
+<b>.labelWidth</b> is used to amend the right hand margin of the current frame element so that tick text is positioned outside the current frame,
 
 ```
-let newMargin = myYAxis.yLabelOffset()+currentFrame.margin().right;
+let newMargin = myYAxis.labelWidth()+currentFrame.margin().right;
 currentFrame.margin({right:newMargin});
 d3.select(currentFrame.plot().node().parentNode)
 	.call(currentFrame);
@@ -75,7 +75,7 @@ The current frame can then still be used to correctly define the <b>.range()</b>
 
 #myAxis<b>.range([Array])</b> defines the axis  range in the same way as you would when creating a normal d3.scaleLinear(). If no <b>.range()</b> is defined the default is [120,0])
 
-#myAxis<b>.yLabelOffset([Number])</b> used to return the width of the text on the axis tick. Will vary depending on tick e.g. a label of 1,000,000 is wider than a value of 10 and will return a higher number.
+#myAxis<b>.labelWidth([Number])</b> used to return the width of the text on the axis tick. Will vary depending on tick e.g. a label of 1,000,000 is wider than a value of 10 and will return a higher number.
 
 #myAxis<b>.numTicks([Number])</b> as they name suggest defines how many ticks are on the axis. 0 to 100 with 3 tick would give a zero line, a fifty line and a hundred line.
 
@@ -92,7 +92,7 @@ The current frame can then still be used to correctly define the <b>.range()</b>
 currentFrame.plot()
 	.call(myYAxis);
 
-let newMargin = myYAxis.yLabelOffset()+currentFrame.margin().left;
+let newMargin = myYAxis.labelWidth()+currentFrame.margin().left;
 currentFrame.margin({left:newMargin});
 d3.select(currentFrame.plot().node().parentNode)
 .call(currentFrame);
@@ -113,7 +113,7 @@ myYAxis
 currentFrame.plot()
 	.call(myYAxis);
 
-let newMargin = myYAxis.yLabelOffset()+currentFrame.margin().right
+let newMargin = myYAxis.labelWidth()+currentFrame.margin().right
 currentFrame.margin({right:newMargin});
 d3.select(currentFrame.plot().node().parentNode)
 .call(currentFrame);
