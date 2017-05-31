@@ -6,7 +6,7 @@ export default function() {
         .domain([0,10000])
         .range([120,0])
     let yAxisAlign = "right"
-    let yLabelOffset = 0;
+    let labelWidth = 0;
     let tickSize = 300;
     let yAxisHighlight = 0;
     let numTicks = 5
@@ -24,19 +24,19 @@ export default function() {
         //Calculate width of widest .tick text
         parent.selectAll(".yAxis text").each(
             function(){
-                yLabelOffset=Math.max(this.getBBox().width,yLabelOffset);
+                labelWidth=Math.max(this.getBBox().width,labelWidth);
             })
         //Use this to amend the tickSIze and re cal the vAxis
-        yLabel.call(yAxis.tickSize(tickSize-yLabelOffset))
+        yLabel.call(yAxis.tickSize(tickSize-labelWidth))
 
         //position label on right hand axis
         if(yAxisAlign=="right") {
             yLabel.selectAll("text")
-            .attr("dx",yLabelOffset)
+            .attr("dx",labelWidth)
         }
         //translate if a left axis
         if (yAxisAlign=="left") {
-            yLabel.attr("transform","translate("+(tickSize-yLabelOffset)+","+0+")")
+            yLabel.attr("transform","translate("+(tickSize-labelWidth)+","+0+")")
         }
         //identify 0 line if there is one
         let originValue = 0;
@@ -62,9 +62,9 @@ export default function() {
         yAxisAlign=d;
         return axis;
     }
-    axis.yLabelOffset = (d)=>{
-        if(d===undefined) return yLabelOffset
-        yLabelOffset=d;
+    axis.labelWidth = (d)=>{
+        if(d===undefined) return labelWidth
+        labelWidth=d;
         return axis;
     }
     axis.tickSize = (d)=>{
